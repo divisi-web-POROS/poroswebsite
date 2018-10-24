@@ -11,6 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+// kalo udah mantap
+// Route::get('/', 'HomeController@index')->name('home');
+Route::get('/develop', 'HomeController@index');
+
+// kalo maintenance
+Route::get('/', function(){
+	return view('layouts.maintenance');
 });
+
+// route ke admin panel
+Route::group(['prefix' => 'mimin'], function () {
+    Voyager::routes();
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

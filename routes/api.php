@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::post('login', 'ApiAuthController@login');
+Route::post('register', 'ApiAuthController@register');
+Route::get('user', 'ApiAuthController@profile')->middleware('jwt.auth');
+
+Route::get('queue', 'BloodDonationController@currentNumber');
+Route::get('addQueue', 'BloodDonationController@increaseNumber')->middleware('jwt.auth');
+Route::get('resetQueue', 'BloodDonationController@resetNumber')->middleware('jwt.auth');
