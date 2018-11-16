@@ -40,7 +40,7 @@
 				</div>
 				@endforeach
 			</div>
-			<div class="row">
+<!-- 			<div class="row">
 				<div class="col-md-12">
 					{{-- {{ $blogs->links() }} --}}
 					<ul class="pagination">
@@ -52,7 +52,7 @@
 						<li class="next"><a href="#"><span class="fa fa-angle-right"></span></a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 @endsection

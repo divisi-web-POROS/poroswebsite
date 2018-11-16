@@ -36,7 +36,7 @@
 				</div>
 				@endforeach
 			</div>
-			<div class="row">
+<!-- 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<ul class="pagination">
 						<li class="prev"><a href="#"><span class="fa fa-angle-left"></span></a></li>
@@ -47,7 +47,7 @@
 						<li class="next"><a href="#"><span class="fa fa-angle-right"></span></a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 @endsection
