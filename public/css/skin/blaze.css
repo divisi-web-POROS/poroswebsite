@@ -9,7 +9,7 @@ Version:	1.1
 	color: #82B440;
 }
 
-.section-title h2::before,#j-slider .slide-button .button.primary,#header .nav li .sub-menu,#header .nav li .sub-menu,#j-slider .slide-button .button:hover,#header.sticky,#j-slider .slide-button .button:before,#j-slider .owl-nav div:hover,#j-slider .owl-dots .owl-dot:hover span,#j-slider .owl-dots .owl-dot.active span,#service .single-service:hover h2::before,#about-us .tabs-main .nav-tabs li.active a,#about-us .tabs-main .nav-tabs li:hover a,#about-us .single-tab i,#our-skill .single-skill .progress-bar,#why-choose .why-image .video a,#why-choose .single-choose,#team .team-social li a,#testimonial .testimonial-info h6:before,#testimonial .owl-nav div:hover,#portfolio .portfolio-head:before,#portfolio .owl-theme .owl-nav div,#portfolio .pagination li:hover a,#portfolio .pagination li.active a,#portfolio.single .features h2::before,#portfolio.single .portfolio-des .button,#statics .static-single,#blog  .single-blog .link,#blog .owl-theme .owl-nav div,#blog .pagination li:hover a,#blog .pagination li.active a,#blog .single-comments .body,#blog .form .search input[type="submit"],#blog .tags ul li a:hover,#contact .form-group .button,#location .single-address.active,#newslatter .newslatter form button,#mail .button,#footer .social li:hover a,#footer .social li.active a,#scrollUp,.k-bubble-1,
+.section-title h2::before,#j-slider .slide-button .button.primary,#header .nav li .sub-menu,#header .nav li .sub-menu,#j-slider .slide-button .button:hover,#header.sticky,#j-slider .slide-button .button:before,#j-slider .owl-nav div:hover,#j-slider .owl-dots .owl-dot:hover span,#j-slider .owl-dots .owl-dot.active span,#service .single-service:hover h2::before,#about-us .tabs-main .nav-tabs li.active a,#about-us .tabs-main .nav-tabs li:hover a,#about-us .single-tab i,#our-skill .single-skill .progress-bar,#why-choose .why-image .video a,#why-choose .single-choose,#team .team-social li a,#testimonial .testimonial-info h6:before,#testimonial .owl-nav div:hover,#portfolio .portfolio-head:before,#portfolio .owl-theme .owl-nav div,#portfolio .pagination li:hover a,#portfolio .pagination li.active a,#portfolio.single .features h2::before,#portfolio.single .portfolio-des .button,#statics .static-single,#blog  .single-blog .link,#blog .owl-theme .owl-nav div,#blog .pagination li:hover a,#blog .pagination li.active a,#blog .single-comments .body,#blog .form .search input[type="submit"],#blog .tags ul li a,#contact .form-group .button,#contact .single-address,#newslatter .newslatter form button,#mail .button,#footer .social li:hover a,#footer .social li.active a,#scrollUp,.k-bubble-1,
 .k-bubble-2,#j-slider .animate-text .slide-text .button,#portfolio.single .website .button,#blog .blog-comments h2::before,.mfp-counter,#j-slider .slide-text h1:before{
 	background:#82B440;
 } 
@@ -25,7 +25,27 @@ Version:	1.1
 #blog .single-comments .body::before{
 	border-right-color:#82B440;
 }
+.single-blog a{
+	color: #82B440;
+}
 
 #footer:before{
 	border-bottom-color:#82B440;
+}
+
+.blog-comments .form-group .button {
+	background:#82B440;
+}
+
+.more-btn{
+	background-color: #82B440;
+	color: #fff;
+}
+.more-btn:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+#blog .tags ul li a:hover{
+	background-color: #444
 }

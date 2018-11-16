@@ -10,9 +10,8 @@
 					<div class="col-md-8 col-sm-12 col-xs-12">
 						<div class="slide-text left">
 							<div class="slider-inner">
-								{{-- <h1><span>poros organization</span> of open source</h1> --}}
-								<h1>{{ App\UI::where('field', 'section1_header_1')->first()->value }}</h1>
-								<p>{{ App\UI::where('field', 'section1_text_1')->first()->value }}</p>
+								<h1>{!!App\UI::where('field', 'section1_header_1')->first()->value!!}</h1>
+								<p>{!!App\UI::where('field', 'section1_text_1')->first()->value!!}</p>
 							</div>
 						</div>
 					</div>
@@ -25,8 +24,8 @@
 					<div class="col-md-8 col-sm-12 col-xs-12">
 						<div class="slide-text left">
 							<div class="slider-inner">
-								<h1>{{ App\UI::where('field', 'section1_header_2')->first()->value }}</h1>
-								<p>{{ App\UI::where('field', 'section1_text_2')->first()->value }}</p>
+								<h1>{!!App\UI::where('field', 'section1_header_2')->first()->value!!}</h1>
+								<p>{!!App\UI::where('field', 'section1_text_2')->first()->value!!}</p>
 							</div>
 						</div>
 					</div>
@@ -36,7 +35,7 @@
 	</div>
 </section>
 
-<section id="why-choose" class="section">
+{{-- <section id="why-choose" class="section">
 	<div class="why-image">
 		<div class="video"><a href="https://www.youtube.com/watch?v=wZWiRoktNWA" class="video-play mfp-iframe wow zoomIn"><i class="fa fa-play"></i></a></div>
 		<!-- <img src="images/video.png" alt=""> -->
@@ -75,7 +74,7 @@
 			</div>					
 		</div>
 	</div>
-</section>	
+</section> --}}	
 
 <section id="service" class="section">
 	<div class="container">
@@ -90,25 +89,25 @@
 		</div>
 		<div class="row">
 			<!-- Single Service -->
-			<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
+			<div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
 				<div class="single-service">
-					<i class="fa fa-check"></i>
+					<i class="fas fa-bullhorn"></i>
 					<h2>{{ App\UI::where('field', 'section3_name_1')->first()->value }}</h2>
 					<p>{{ App\UI::where('field', 'section3_text_1')->first()->value }}</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.8s">
+			<div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn col-md-push-4 col-sm-push-4" data-wow-delay="0.6s">
 				<div class="single-service">
-					<i class="fas fa-send"></i>
-					<h2>{{ App\UI::where('field', 'section3_name_2')->first()->value }}</h2>
-					{{-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p> --}}
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.6s">
-				<div class="single-service">
-					<i class="fa fa-edit"></i>
+					<i class="fas fa-sitemap"></i>
 					<h2>{{ App\UI::where('field', 'section3_name_3')->first()->value }}</h2>
 					<p>{{ App\UI::where('field', 'section3_text_3')->first()->value }}</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 wow fadeIn col-md-pull-4 col-sm-pull-4" data-wow-delay="0.8s">
+				<div class="single-service">
+					<i class="fas fa-rocket"></i>
+					<h2>{{ App\UI::where('field', 'section3_name_2')->first()->value }}</h2>
+					{{-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p> --}}
 				</div>
 			</div>
 	<!-- 					<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1s">
@@ -136,7 +135,7 @@
 				<div class="col-md-5 col-sm-12 col-xs-12 wow slideInLeft">
 					<div class="about-main">
 						<div class="about-img">
-							<img src="{{ App\UI::where('field', 'section4_image')->first()->path }}" alt=""/>
+							<img src="{{config('app.url') . '/storage/' . App\UI::where('field', 'section4_image')->first()->path }}" alt=""/>
 						</div>
 					</div>
 				</div>
@@ -156,35 +155,35 @@
 								<div class="row">
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single-tab">
-											<i class="fa fa-check"></i>
+											<i class="fas fa-code"></i>
 											<h4>{{ App\UI::where('field', 'section4_name_1')->first()->value }}</h4>
 											<p>{{ App\UI::where('field', 'section4_text_1')->first()->value }}</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single-tab">
-											<i class="fa fa-support"></i>
+											<i class="fab fa-android"></i>
 											<h4>{{ App\UI::where('field', 'section4_name_2')->first()->value }}</h4>
 											<p>{{ App\UI::where('field', 'section4_text_2')->first()->value }}</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single-tab">
-											<i class="fa fa-send"></i>
+											<i class="fas fa-pencil-ruler"></i>
 											<h4>{{ App\UI::where('field', 'section4_name_3')->first()->value }}</h4>
 											<p>{{ App\UI::where('field', 'section4_text_3')->first()->value }}</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single-tab">
-											<i class="fa fa-rocket"></i>
+											<i class="fab fa-linux"></i>
 											<h4>{{ App\UI::where('field', 'section4_name_4')->first()->value }}</h4>
 											<p>{{ App\UI::where('field', 'section4_text_4')->first()->value }}</p>
 										</div>
 									</div>
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<div class="single-tab">
-											<i class="fa fa-support"></i>
+											<i class="fas fa-unlock-alt"></i>
 											<h4>{{ App\UI::where('field', 'section4_name_5')->first()->value }}</h4>
 											<p>{{ App\UI::where('field', 'section4_text_5')->first()->value }}</p>
 										</div>
@@ -215,7 +214,7 @@
 					<div class="single-team">
 						<div class="team-info">
 							<div class="name">
-								<h4>{{ $official->name }}<span>{{ $official->position}}</span></h4>
+								<h4>{{ $official->name }}<span>{{ $official->role->display_name }}</span></h4>
 							</div>
 							<p>{{ $official->text }}</p>
 							<ul class="team-social">
@@ -253,19 +252,24 @@
 					<div class="portfolio-carousel">
 						@foreach($portofolios as $portofolio)
 						<div class="portfolio-single">
-							<a href="{{ $portofolio->thumbnail }}" class="zoom">
-								<div class="portfolio-head">
-									<img src="{{ $portofolio->thumbnail }}" alt=""/>
-									<i class="fa fa-search"></i>
+							<a href="{{config('app.url') . '/storage/' .  $portofolio->thumbnail }}" class="zoom">
+								<div class="portfolio-head" style="height: 200px; overflow: hidden;">
+									<img src="{{config('app.url') . '/storage/' .  $portofolio->thumbnail }}" alt=""/>
+									<i class="fas fa-search"></i>
 								</div>
 							</a>
-							<div class="text">
-								<h4><a href="portfolio-single.html">{{ $portofolio->title }}</a></h4>
-								<p>{{ $portofolio->text }}.</p>
+							<div class="text" style="height: 150px; overflow: hidden; text-overflow: ellipsis; ">
+								<h4><a href="/portofolio/{{ $portofolio->id }}">{{ $portofolio->title }}</a></h4>
+								<p>{!! $portofolio->text !!}.</p>
 							</div>
 						</div>
 						@endforeach
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<p class="more-btn-p"><a class="more-btn" href="/portofolio">Lebih banyak</a></p>
 				</div>
 			</div>
 		</div>
@@ -332,24 +336,29 @@
 						<div class="col-md-4 col-sm-6 col-xs-12">
 							<!-- Single blog -->
 							<div class="single-blog">
-								<div class="blog-head">
-									<img src="storage/{{ $blog->image }}" alt="#">
-									<a href="blog-single.html" class="link"><i class="fa fa-link"></i></a>
+								<div class="blog-head" style="height: 200px; overflow: hidden;">
+									<img src="{{config('app.url') . '/storage/' .  $blog->image }}" alt="#">
+									<a href="/blog/{{ $blog->id }}" class="link"><i class="fas fa-link"></i></a>
 								</div>
-								<div class="blog-content">
-									<h2><a href="blog-single.html">{{ $blog->title }}</a></h2>
+								<div class="blog-content" style="height: 200px; overflow: hidden; text-overflow: ellipsis;">
+									<h2><a href="/blog/{{ $blog->id }}">{{ $blog->title }}</a></h2>
 									<div class="meta">
-										<span><i class="fa fa-user"></i>admin</span>
-										<span><i class="fa fa-calendar"></i>19 May</span>
-										<span><i class="fa fa-comments"></i>5 Comments</span>
+										<span style="float: left;"><i class="fas fa-user"></i>{{ $blog->user->name }}</span>
+										<span style="float: right;"><i class="fas fa-calendar-plus"></i>{{ $blog->created_at->format('d/m/Y') }}</span>
+										{{-- <span><i class="fa fa-comments"></i>5 Comments</span> --}}
 									</div>
-									<p>{{ $blog->text }}</p>
-									<a href="blog-single.html" class="btn">Read More<i class="fa fa-angle-double-right"></i></a>
+									{!! $blog->text !!}
 								</div>
+								<a href="/blog/{{ $blog->id }}" class="btn">Read More<i class="fa fa-angle-double-right"></i></a>
 							</div>	
 						</div>
 						@endforeach
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<p class="more-btn-p"><a class="more-btn" href="/blog">Lebih banyak</a></p>
 				</div>
 			</div>
 		</div>
@@ -421,7 +430,7 @@
 			</div>
 		</div>
 		<div class="gmap">
-			<div class="map"></div>
+			<div class="map" id="map"></div>
 		</div>
 	</section>
 
@@ -501,4 +510,26 @@
 			</div>
 		</div>
 	</div> --}}
+	@endsection
+	@section('custom-js')
+	<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+	<script async defer>
+		map = new OpenLayers.Map("map");
+		map.addLayer(new OpenLayers.Layer.OSM());
+
+		var lonLat = new OpenLayers.LonLat( 112.614387 ,-7.954677 )
+		.transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+            );
+
+		var zoom=18;
+
+		var markers = new OpenLayers.Layer.Markers( "Markers" );
+		map.addLayer(markers);
+
+		markers.addMarker(new OpenLayers.Marker(lonLat));
+
+		map.setCenter (lonLat, zoom);
+	</script>
 	@endsection

@@ -11,8 +11,6 @@
 |
 */
 
-Auth::routes();
-
 // kalo udah mantap
 // Route::get('/', 'HomeController@index')->name('home');
 Route::get('/develop', 'HomeController@index');
@@ -21,11 +19,17 @@ Route::get('/develop', 'HomeController@index');
 Route::get('/', function(){
 	return view('layouts.maintenance');
 });
+Route::get('/blog', 'HomeController@indexBlog');
+Route::get('/blog/{blog}', 'HomeController@showBlog');
+Route::post('/blog/{blog}/comment', 'HomeController@storeComment');
+Route::get('/portofolio', 'HomeController@indexPortofolio');
+Route::get('/portofolio/{portofolio}', 'HomeController@showPortofolio');
 
 // route ke admin panel
 Route::group(['prefix' => 'mimin'], function () {
     Voyager::routes();
 });
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

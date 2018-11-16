@@ -16,8 +16,8 @@ class CreateUIsTable extends Migration
         Schema::create('uis', function (Blueprint $table) {
             $table->increments('id');
             $table->string('field')->unique();
-            $table->string('value')->nullable();
-            $table->string('path')->nullable();
+            $table->text('value')->nullable();
+            $table->text('path')->nullable();
             $table->timestamps();
         });
     }

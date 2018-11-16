@@ -316,20 +316,20 @@ Version:	1.1
 	/*======================================
 	// Google Map
 	======================================*/ 
-	var map = new GMaps({
-			el: '.map',
-			lat: 23.810332,
-			lng: 90.412518,
-			scrollwheel: false,
-		});
-		map.addMarker({
-			lat: 23.810332,
-			lng: 90.412518,
-			title: 'Marker with InfoWindow',
-			infoWindow: {
-			content: '<p>Welcome to Codeglim</p>'
-		}
-	});
+	// var map = new GMaps({
+	// 		el: '.map',
+	// 		lat: 23.810332,
+	// 		lng: 90.412518,
+	// 		scrollwheel: false,
+	// 	});
+	// 	map.addMarker({
+	// 		lat: 23.810332,
+	// 		lng: 90.412518,
+	// 		title: 'Marker with InfoWindow',
+	// 		infoWindow: {
+	// 		content: '<p>Welcome to Codeglim</p>'
+	// 	}
+	// });
 	/*====================================
 		Background Video
 	======================================*/
