@@ -117,7 +117,7 @@ Daftar [kontributor](https://github.com/divisi-web-POROS/poroswebsite/graphs/con
 
 ## Lisensi
 
-Projek ini dibawah lisensi MIT - lihat di [LICENSE.md](LICENSE.md) file untuk lebih jelas
+Projek ini dibawah lisensi MIT - lihat di [LICENSE](LICENSE) file untuk lebih jelas
 
 <!-- ## Acknowledgments
 
