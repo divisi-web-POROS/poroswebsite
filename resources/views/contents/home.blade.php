@@ -18,7 +18,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="single-slider" style="background-image:url('{{config('app.url') . '/storage/' . App\UI::where('field', 'section1_image_1')->first()->path }}');" >
+		<div class="single-slider" style="background-image:url('{{config('app.url') . '/storage/' . App\UI::where('field', 'section1_image_2')->first()->path }}');" >
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-sm-12 col-xs-12">
@@ -148,7 +148,7 @@
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane fade in active" id="about">
 								<div class="about">
-									<p>{{ App\UI::where('field', 'section4_text')->first()->value }}</p>
+									<p>{!! App\UI::where('field', 'section4_text')->first()->value !!}</p>
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane fade in" id="welcome">

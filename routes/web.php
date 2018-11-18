@@ -12,13 +12,14 @@
 */
 
 // kalo udah mantap
-// Route::get('/', 'HomeController@index')->name('home');
-Route::get('/develop', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
+// Route::get('/develop', 'HomeController@index');
 
 // kalo maintenance
-Route::get('/', function(){
-	return view('layouts.maintenance');
-});
+// Route::get('/', function(){
+// 	return view('layouts.maintenance');
+// });
+
 Route::get('/blog', 'HomeController@indexBlog');
 Route::get('/blog/{blog}', 'HomeController@showBlog');
 Route::post('/blog/{blog}/comment', 'HomeController@storeComment');

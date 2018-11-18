@@ -27,7 +27,8 @@ class HomeController extends Controller
 
     public function indexBlog()
     {
-        $blogs = Blog::latest()->paginate(6);
+        // $blogs = Blog::latest()->paginate(6);
+        $blogs = Blog::all();
         return view('contents.blogs', compact('blogs'));
     }
 
@@ -42,7 +43,8 @@ class HomeController extends Controller
 
     public function indexPortofolio()
     {
-        $portofolios = Portofolio::latest()->paginate(6);
+        // $portofolios = Portofolio::latest()->paginate(6);
+        $portofolios = Portofolio::all();
         return view('contents.portofolios', compact('portofolios'));
     }
 

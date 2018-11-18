@@ -34,8 +34,9 @@
 				<!-- Social -->
 				<ul class="social">
 					<li><a href="{{ App\UI::where('field', 'instagram_link')->first()->value }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="{{ App\UI::where('field', 'line_link')->first()->value }}" target="_blank"><i class="fab fa-line"></i></a></li>
+					<li><a  class="line-it-button" data-lang="en" data-type="friend" data-lineid="yst3638j"  href="{{ App\UI::where('field', 'line_link')->first()->value }}" target="_blank"><i class="fab fa-line"></i></a></li>
 					<li><a href="{{ App\UI::where('field', 'youtube_link')->first()->value }}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+
 				</ul>
 				<!--/ End Social -->
 			</div>

@@ -1,51 +1,126 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Website Organisasi POROS
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+POROS adalah organisasi yang mewadahi pengguna GNU/Linux serta perangkat lunak sumber terbuka, bebas, dan legal di Universitas Brawijaya pada umumnya, di Fakultas Ilmu Komputer pada khususnya.
 
-## About Laravel
+<!-- ## Getting Started
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. -->
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Prasyarat
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Untuk menjalankan website secara dikomputer anda, dibutuhkan :
+1. [Composer](https://getcomposer.org/download/)
+2. Apache2
+3. MySql
+4. PHP
 
-## Learning Laravel
+### Instalasi
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+Step - step untuk menjalankan website di workspace secara lokal
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Clone projek
 
-## Laravel Sponsors
+```
+git clone https://github.com/divisi-web-POROS/poroswebsite.git
+```
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+Pindah ke direktori projek
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+```
+cd poroswebsite
+```
 
-## Contributing
+Install dependencies
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+```
+composer install
+```
 
-## Security Vulnerabilities
+Buat file .env dengan isi template seperti file .env.example, Kemudian isi informasi database
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+```
+DB_DATABASE=(NAMA_DATABASE)
+DB_USERNAME=(USERNAME_DATABASE)
+DB_PASSWORD=(PASSWORD_DATABASE)
+```
 
-## License
+Generate Key
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+```
+php artisan key:generate
+```
+
+Generate tabel beserta data bawaan
+
+```
+php artisan migrate --seed
+```
+
+Projek sudah siap untuk dijalankan
+
+```
+php artisan serve
+```
+
+Kemudian akses website menggunakan browser dengan URL
+
+```
+localhost:8000
+```
+
+<!-- ## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system -->
+
+## Dikembangkan menggunakan library/template
+
+* [Laravel 5.4](https://laravel.com/docs/5.4) - PHP Website Framework
+* [Voyager Admin](https://laravelvoyager.com/) - Laravel Admin Package
+* [SIAM UB Auth](https://github.com/araditama/siam-ub-auth) - Vendor SIAM UB thanks to [Araditama](https://github.com/araditama)
+* [JWT Auth](https://github.com/tymondesigns/jwt-auth) - Token based Auth
+* [BizPro Template](https://themewagon.com/themes/free-business-website-template-one-page/) - HTML5 Template
+* [OpenStreetMap](https://www.openstreetmap.org/about) - Visual Penunjuk Lokasi
+
+<!-- ## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).  -->
+
+## Pengembang
+
+* **Divisi Website POROS** - *Penanggung jawab* - [Account Page](https://github.com/divisi-web-POROS)
+
+Daftar [kontributor](https://github.com/divisi-web-POROS/poroswebsite/graphs/contributors) yang berpartisipasi dalam projek.
+
+## Lisensi
+
+Projek ini dibawah lisensi MIT - lihat di [LICENSE.md](LICENSE.md) file untuk lebih jelas
+
+<!-- ## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc -->
