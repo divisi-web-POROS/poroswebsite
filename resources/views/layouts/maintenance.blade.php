@@ -13,9 +13,9 @@ http://www.templatemo.com/tm-521-get-ready
 -->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
+<!--      <meta name="description" content="">
      <meta name="keywords" content="">
-     <meta name="team" content="">
+     <meta name="team" content=""> -->
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
      <link rel="stylesheet" href="{{ asset('maintenance/css/bootstrap.min.css') }}">
