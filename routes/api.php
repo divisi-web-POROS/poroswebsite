@@ -24,3 +24,5 @@ Route::get('user', 'ApiAuthController@profile')->middleware('jwt.auth');
 Route::get('queue', 'BloodDonationController@currentNumber');
 Route::get('addQueue', 'BloodDonationController@increaseNumber')->middleware('jwt.auth');
 Route::get('resetQueue', 'BloodDonationController@resetNumber')->middleware('jwt.auth');
+
+Route::post('krs', 'User\ApiController@getKRS');
