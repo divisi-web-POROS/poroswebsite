@@ -51,9 +51,11 @@ class ApiController extends Controller
             for ($i = 0; $i < sizeof($data) - 6; $i++) {
                 $result = explode('        ', $data[$i], 6);
                 $matkul = substr($result[2], 15);
+                $sks = $result[3] + 0;
                 $kelas = $result[4];
                 $krs[$i] = [
                         'matkul' => $matkul,
+                        'sks' => $sks,
                         'kelas' => $kelas
                     ];
             }
